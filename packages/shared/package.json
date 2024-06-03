@@ -9,12 +9,14 @@
     "@types/lodash": "^4.17.4",
     "lodash": "^4.17.21"
   },
+  "types": "./dist/index.d.ts",
   "main": "./dist/openxui-shared.umd.js",
   "module": "./dist/openxui-shared.mjs",
   "exports": {
     ".": {
       "require": "./dist/openxui-shared.umd.js",
-      "module": "./dist/openxui-shared.mjs"
+      "module": "./dist/openxui-shared.mjs",
+      "types": "./dist/index.d.ts"
     }
   }
 }

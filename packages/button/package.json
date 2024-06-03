@@ -13,13 +13,14 @@
     "build": "vite build",
     "test": "echo test"
   },
-  "types": "",
+  "types": "./dist/index.d.ts",
   "main": "./dist/openxui-button.umd.js",
   "module": "./dist/openxui-button.mjs",
   "exports": {
     ".": {
       "require": "./dist/openxui-button.umd.js",
-      "module": "./dist/openxui-button.mjs"
+      "module": "./dist/openxui-button.mjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "files": [
