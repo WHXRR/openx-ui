@@ -7,7 +7,7 @@ import {
 
 <template>
   <div>
-    <Button>test</Button>
+    <Button>test1</Button>
     <Input />
   </div>
 </template>
