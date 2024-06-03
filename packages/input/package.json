@@ -1,3 +1,36 @@
 {
-  "name": "test-ui"
+  "name": "@openxui/input",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "vue",
+    "ui",
+    "component library"
+  ],
+  "author": "OpenX",
+  "license": "MIT",
+  "scripts": {
+    "build": "vite build",
+    "test": "echo test"
+  },
+  "types": "",
+  "main": "./dist/openxui-input.umd.js",
+  "module": "./dist/openxui-input.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/openxui-input.umd.js",
+      "module": "./dist/openxui-input.mjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "vue": ">=3.0.0"
+  },
+  "dependencies": {
+    "@openxui/shared": "workspace:^"
+  },
+  "devDependencies": {}
 }

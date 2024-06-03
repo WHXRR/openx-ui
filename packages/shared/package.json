@@ -1,3 +1,20 @@
 {
-  "name": "test-ui"
+  "name": "@openxui/shared",
+  "private": true,
+  "scripts": {
+    "dev": "echo dev",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.17.4",
+    "lodash": "^4.17.21"
+  },
+  "main": "./dist/openxui-shared.umd.js",
+  "module": "./dist/openxui-shared.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/openxui-shared.umd.js",
+      "module": "./dist/openxui-shared.mjs"
+    }
+  }
 }

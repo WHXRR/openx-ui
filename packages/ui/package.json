@@ -1,0 +1,37 @@
+{
+  "name": "@openxui/ui",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "vue",
+    "ui",
+    "component library"
+  ],
+  "author": "OpenX",
+  "license": "MIT",
+  "scripts": {
+    "build": "vite build",
+    "test": "echo test"
+  },
+  "types": "",
+  "main": "./dist/openxui-ui.umd.js",
+  "module": "./dist/openxui-ui.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/openxui-ui.umd.js",
+      "module": "./dist/openxui-ui.mjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "vue": ">=3.0.0"
+  },
+  "dependencies": {
+    "@openxui/button": "workspace:^",
+    "@openxui/input": "workspace:^",
+    "@openxui/shared": "workspace:^"
+  }
+}
