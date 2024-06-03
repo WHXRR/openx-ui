@@ -10,7 +10,8 @@
     "lint:script": "eslint --ext .js,.jsx,.ts,.tsx,.vue --fix ./",
     "lint:style": "stylelint --fix ./**/*.{css,scss,vue,html}",
     "prepare": "husky install",
-    "commitlint": "commitlint --config commitlint.config.js -e -V"
+    "commitlint": "commitlint --config commitlint.config.js -e -V",
+    "lint-staged": "lint-staged"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
@@ -27,6 +28,7 @@
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-vue": "^9.26.0",
     "husky": "^8.0.0",
+    "lint-staged": "^15.2.5",
     "prettier": "^3.3.0",
     "rimraf": "^5.0.7",
     "sass": "^1.77.4",
