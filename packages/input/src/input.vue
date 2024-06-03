@@ -12,7 +12,7 @@ const emit = defineEmits<{
 }>();
 
 function inputHandler(e: any) {
-  const value: string = e.target.value;
+  const { value } = e.target;
   emit('update:modelValue', value);
   hello(value);
 }
@@ -20,9 +20,10 @@ function inputHandler(e: any) {
 </script>
 
 <template>
-  <input 
-    class="openx-input" 
-    type="text" 
-    :value="modelValue" 
-    @input="inputHandler" />
+  <input
+    class="openx-input"
+    type="text"
+    :value="modelValue"
+    @input="inputHandler"
+  >
 </template>

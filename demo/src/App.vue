@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import {
   Button,
-  Input
-} from '@openxui/ui'
+  Input,
+} from '@openxui/ui';
 </script>
 
 <template>
