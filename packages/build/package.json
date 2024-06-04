@@ -1,0 +1,35 @@
+{
+  "name": "@openxui/build",
+  "private": true,
+  "scripts": {
+    "dev": "echo dev",
+    "build": "vite build"
+  },
+  "types": "./dist/src/index.d.ts",
+  "main": "./dist/openxui-build.umd.js",
+  "module": "./dist/openxui-build.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/openxui-build.umd.js",
+      "import": "./dist/openxui-build.mjs",
+      "types": "./dist/src/index.d.ts"
+    }
+  },
+  "peerDependencies": {
+    "vite": ">=3.0.0",
+    "vue": ">=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "vue": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@rollup/plugin-replace": "^5.0.5",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "rollup-plugin-visualizer": "^5.12.0",
+    "type-fest": "^4.18.3",
+    "typescript": "^5.4.5",
+    "vite-plugin-inspect": "^0.8.4"
+  }
+}

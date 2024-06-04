@@ -71,9 +71,11 @@ module.exports = defineConfig({
       files: [
         '**/vite.config.*',
         '**/vitest.config.*',
+        'scripts/**/*',
       ],
       rules: {
         'no-console': 'off',
+        'import/no-relative-packages': 'off',
       },
     },
   ],
